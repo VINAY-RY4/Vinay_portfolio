@@ -1,0 +1,64 @@
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.edu-card {
+  display: flex;
+  gap: 26px;
+  padding: 32px;
+}
+
+.edu-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(var(--color-secondary-rgb), 0.1);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.edu-content h3 {
+  font-size: 1.15rem;
+  margin: 10px 0 4px;
+}
+
+.edu-content h4 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.edu-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-content li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding-left: 16px;
+  position: relative;
+}
+
+.edu-content li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  .edu-card { flex-direction: column; }
+}

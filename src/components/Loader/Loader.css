@@ -1,0 +1,26 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.loader-mark {
+  font-family: var(--font-mono);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 500;
+  color: var(--text-soft);
+  display: flex;
+  gap: 4px;
+}
+
+.loader-name {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
